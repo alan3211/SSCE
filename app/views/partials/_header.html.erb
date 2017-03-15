@@ -1,0 +1,71 @@
+<div ng-app="ECGE" ng-controller="titulos">
+  <!--Logos del IPN-->
+  <nav class="container collapse navbar-collapse ">
+    <div class="row">
+      <div class="col-md-6">
+        <a href="http://ipn.mx">
+          <%= image_tag "logoipn.png", alt:"escuela", class: "img-responsive"%>
+        </a>
+      </div>
+      <div class="col-md-3"></div>
+      <div ng-repeat="enc in titles_ipn" class="large-padding col-md-{{enc.numero}} text-{{enc.texto}}">
+          <a href="{{enc.enlace}}" target="_blank" class="guinda list-no">
+            <p>{{enc.title}}</p>
+          </a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="color-5 blanco">
+    <div class="container">
+      <div class="row">
+
+        <div class="visible-md visible-lg">
+          <!--Logo de la escuela-->
+          <div class="col-md-1">
+            <a href="/">
+              <%= image_tag "logoESCOMSolo.png", alt: "Logo ESCOM"%>
+            </a>
+          </div>
+          <!--Titulo de la aplicación Web-->
+          <div class="col-md-7">
+            <h4 class="form-control-static">Seguimiento de Solicitudes de Constancias de la ESCOM.</h4>
+          </div>
+          <div class="col-md-4">
+            <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li ng-repeat="enc in titles">
+                  <a href="{{enc.enlace}}" class="without-style">{{enc.titulo}}</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="visible-xs visible-sm">
+          <div class="navbar-header">
+            <div class="col-xs-9 col-sm-9">
+              <a class="navbar-brand blanco no-margin" href="/"><h6 class="no-margin">Seguimiento de Solicitudes de Constancias de la ESCOM.</h6></a>
+            </div>
+            <div class="col-xs-3 col-sm-3">
+              <button type="button" class="navbar-toggle glyphicon glyphicon-align-justify blanco" data-toggle="collapse"
+                      data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Menú</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li ng-repeat="enc in titles">
+                <a href="{{enc.enlace}}">{{enc.titulo}}</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+

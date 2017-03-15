@@ -13,3 +13,58 @@
  *= require_tree .
  *= require_self
  */
+
+html,body{
+    font-family: "Lato";
+}
+
+a:visited{
+    text-decoration: none !important;
+}
+
+a,a:hover{
+    background-color: #005099 !important;
+}
+
+.guinda{
+    color:#6C1941 !important;
+    font-weight:bold;
+}
+
+.color-5 ul li a{
+    color:#FFF !important;
+}
+
+.blanco{
+    color:#FFFFFF;
+}
+
+.color-5{
+    background-color: #005099;
+}
+.color-4{
+    background-color: #0082C8;
+}
+.color-3{
+    background-color: #01A4E7;
+}
+.color-2{
+    background-color: #C9DBE4;
+}
+.color-1{
+    background-color: #E8F4FC;
+}
+.no-margin{
+    margin: 0px;
+    padding: -10px;
+}
+.list-no{
+    text-decoration:none !important;
+}
+
+.large-padding{
+    padding-top:40px;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
