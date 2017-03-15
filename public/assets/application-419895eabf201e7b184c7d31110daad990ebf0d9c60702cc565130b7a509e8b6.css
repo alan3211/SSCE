@@ -6851,7 +6851,7 @@ a, a:hover {
 
 /* line 75, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
 .fondo {
-  background: url("escomfoto.jpg");
+  background: url("escomfoto.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
