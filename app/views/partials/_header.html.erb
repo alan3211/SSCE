@@ -1,26 +1,23 @@
 <div ng-app="ECGE" ng-controller="titulos">
-  <!--Logos del IPN-->
-  <nav class="container collapse navbar-collapse ">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="http://ipn.mx">
-          <%= image_tag "logoipn.png", alt:"escuela", class: "img-responsive"%>
-        </a>
-      </div>
-      <div class="col-md-3"></div>
-      <div ng-repeat="enc in titles_ipn" class="large-padding col-md-{{enc.numero}} text-{{enc.texto}}">
-          <a href="{{enc.enlace}}" target="_blank" class="guinda list-no">
-            <p>{{enc.title}}</p>
-          </a>
-      </div>
-    </div>
-  </nav>
-
   <header class="color-5 blanco">
-    <div class="container">
-      <div class="row">
-
         <div class="visible-md visible-lg">
+          <div class="row back-blanco">
+            <!--Logos del IPN-->
+              <nav class=" container collapse navbar-collapse">
+                  <div class="col-md-6">
+                    <a href="http://ipn.mx">
+                      <%= image_tag "logoipn.png", alt:"escuela", class: "img-responsive"%>
+                    </a>
+                  </div>
+                  <div class="col-md-2"></div>
+                  <div ng-repeat="enc in titles_ipn" class="large-padding col-md-{{enc.numero}} text-{{enc.texto}}">
+                    <a href="{{enc.enlace}}" target="_blank" class="guinda list-no">
+                      <p>{{enc.title}}</p>
+                    </a>
+                  </div>
+              </nav>
+          </div>
+          <div class="row">
           <!--Logo de la escuela-->
           <div class="col-md-1">
             <a href="/">
@@ -40,9 +37,21 @@
               </ul>
             </div>
           </div>
+          </div>
         </div>
 
         <div class="visible-xs visible-sm">
+          <div class="row back-blanco">
+            <!--Logos del IPN-->
+            <nav class="navbar navbar-header">
+              <div class="col-xs-12 col-sm-12">
+                <a href="http://ipn.mx">
+                  <%= image_tag "logoipn.png", alt:"escuela", class: "img-responsive"%>
+                </a>
+              </div>
+            </nav>
+          </div>
+          <div class="row">
           <div class="navbar-header">
             <div class="col-xs-9 col-sm-9">
               <a class="navbar-brand blanco no-margin" href="/"><h6 class="no-margin">Seguimiento de Solicitudes de Constancias de la ESCOM.</h6></a>
@@ -63,8 +72,7 @@
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+        </div>
   </header>
 </div>
 
