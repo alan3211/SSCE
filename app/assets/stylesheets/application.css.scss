@@ -11,7 +11,6 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
- *= require bootstrap/dist/css/bootstrap
  *= require_self
  */
 
@@ -72,7 +71,7 @@ a,a:hover{
 }
 
 .fondo{
-  background: url("./escomfoto.jpg");
+  background: url("escomfoto.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;

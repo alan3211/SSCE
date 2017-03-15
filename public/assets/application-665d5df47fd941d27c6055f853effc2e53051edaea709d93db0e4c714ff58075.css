@@ -1,0 +1,116 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+/* line 18, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+html, body {
+  font-family: "Lato";
+}
+
+/* line 22, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+a:visited {
+  text-decoration: none !important;
+}
+
+/* line 26, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+a, a:hover {
+  background-color: #005099 !important;
+}
+
+/* line 30, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.guinda {
+  color: #6C1941 !important;
+  font-weight: bold;
+}
+
+/* line 35, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-5 ul li a {
+  color: #FFF !important;
+}
+
+/* line 39, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.blanco {
+  color: #FFFFFF;
+}
+
+/* line 43, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-5 {
+  background-color: #005099;
+}
+
+/* line 46, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-4 {
+  background-color: #0082C8;
+}
+
+/* line 49, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-3 {
+  background-color: #01A4E7;
+}
+
+/* line 52, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-2 {
+  background-color: #C9DBE4;
+}
+
+/* line 55, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.color-1 {
+  background-color: #E8F4FC;
+}
+
+/* line 58, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.no-margin {
+  margin: 0px;
+  padding: -10px;
+}
+
+/* line 62, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.list-no {
+  text-decoration: none !important;
+}
+
+/* line 66, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.large-padding {
+  padding-top: 40px;
+}
+
+/* line 70, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.back-blanco {
+  background-color: #ffffff;
+}
+
+/* line 74, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.fondo {
+  background: url("escomfoto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+/* line 81, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.bloque {
+  background-color: #292929;
+  width: 740px;
+  height: 220px;
+  margin-top: 150px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+
+/* line 90, /Users/alanhernandez/MEGA/ESCOM/ESCOM/Trabajo Terminal/TT/SSCE/app/assets/stylesheets/application.css.scss */
+.boton {
+  opacity: 0.7;
+  width: 250px;
+  font-size: 20px;
+}
