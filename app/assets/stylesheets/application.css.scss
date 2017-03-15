@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require bootstrap
  *= require_self
  */
 
@@ -66,5 +67,6 @@ a,a:hover{
     padding-top:40px;
 }
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+.fondo{
+  background-image: url("./escomfoto.jpg");
+}
