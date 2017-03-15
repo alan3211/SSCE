@@ -71,15 +71,14 @@ a,a:hover{
 }
 
 .fondo{
-  background: url("escomfoto.png");
-  background-repeat: no-repeat;
+  background-image: url("escomfoto.png");
   background-size: cover;
-  height: 600px;
+  height: 500px;
 }
 
 .bloque{
   background-color: #292929;
-  width: 740px;
+  width: 340px;
   height: 220px;
   margin-top: 150px;
   border-radius: 10px;
