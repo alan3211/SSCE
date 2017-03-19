@@ -47,7 +47,7 @@ app.controller('mensajeconstruccion',["$scope",function(s){
     s.mensaje = function(){
         swal({
             title: 'Versión 0.1',
-            text: 'Pronto veras más funciones no te desesperes',
+            text: 'Pronto verás más funciones no te desesperes...',
             imageUrl: 'http://www.camaratru.org.pe/web2/images/pagina-en-construccion.jpg',
             imageWidth: 400,
             imageHeight: 200,
