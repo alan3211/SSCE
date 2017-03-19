@@ -11,31 +11,15 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require bootstrap/dist/css/bootstrap
  *= require_self
  */
 
-html,body{
-    font-family: "Lato";
+@font-face {
+  font-family: Lato;
 }
 
-a:visited{
-    text-decoration: none !important;
-}
-
-a,a:hover{
-    background-color: #005099 !important;
-}
-
-.guinda{
-    color:#6C1941 !important;
-    font-weight:bold;
-}
-
-.color-5 ul li a{
-    color:#FFF !important;
-}
-
-.blanco{
+.blanco, a:hover,a:visited{
     color:#FFFFFF;
 }
 
@@ -54,72 +38,162 @@ a,a:hover{
 .color-1{
     background-color: #E8F4FC;
 }
-.no-margin{
-    margin: 0px;
-    padding: -10px;
-}
-.list-no{
-    text-decoration:none !important;
-}
 
 .large-padding{
     padding-top:40px;
+}
+
+.small-padding{
+  padding:10px;
 }
 
 .back-blanco{
   background-color: #ffffff;
 }
 
-.fondo{
-  background-image: url("<%= asset_path 'escomfoto.png' %>");
-  background-size: cover;
-  height: 500px;
+.titulos{
+  margin:auto;
 }
 
-.fondo-1{
-  background-image: url("<%= asset_path 'escomfoto.png' %>");
-  background-size: cover;
-  height: 350px;
+.menu li{
+  display: inline-block;
 }
 
-.fondo-2{
-  background-image: url("<%= asset_path 'escomfoto.png' %>");
-  background-size: cover;
-  height: 200px;
+.menu li a{
+  padding-left:10px ;
+  display: inline-block;
+  color:#6C1941;
+  font-weight: bolder !important;
+  text-decoration: none;
 }
 
-
-.bloque{
-  background-color: #292929;
-  width: 640px;
-  height: 220px;
-  margin-top: 150px;
-  border-radius: 10px;
-  opacity: 0.7;
+.navega li{
+  display: block;
+}
+.navega li a{
+  padding: 15px;
+  display: block;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.bloque-1{
-  background-color: #292929;
-  width: 440px;
-  height: 220px;
-  margin-top: 90px;
-  border-radius: 10px;
-  opacity: 0.7;
+@media screen and (min-width: 1201px) and (max-width: 1920px){
+  .margen{
+    margin-top: 40px;
+  }
+
+  .navega{
+    list-style: none;
+    padding:0;
+    margin-top: 15px;
+  }
+
+  .navega li{
+    display: inline-block;
+  }
+  .navega li a{
+    padding: 15px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .tam-letter{
+    font-size: 24px;
+  }
 }
 
-.bloque-2{
-  background-color: #292929;
-  width: 240px;
-  height: 260px;
-  margin-top: 40px;
-  margin-left: -70px;
-  border-radius: 10px;
-  opacity: 0.7;
+@media screen and (min-width: 1024px) and (max-width: 1200px){
+  .margen{
+    margin-top: 25px;
+  }
+
+  .icono-margin{
+    margin-top: -5px;
+  }
+
+  .navega{
+    list-style: none;
+    padding:0;
+    margin-top: 15px;
+  }
+
+  .navega li{
+    display: inline-block;
+  }
+  .navega li a{
+    padding: 15px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .tam-letter{
+    font-size: 18px;
+  }
 }
 
-.boton{
-  opacity: 0.7;
-  width: 250px;
-  font-size: 25px;
+@media screen and (min-width: 990px) and (max-width: 1023px){
+  .margen{
+    margin-top: 20px;
+  }
+
+  .icono-margin{
+    margin-top: -10px;
+  }
+
+  .navega{
+    list-style: none;
+    padding:0;
+    margin-top: 10px;
+  }
+
+  .navega li{
+    display: inline-block;
+  }
+  .navega li a{
+    padding: 15px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .tam-letter{
+    font-size: 16px;
+  }
 }
+
+@media screen and (min-width: 768px) and (max-width: 989px){
+  .margen{
+    margin-top: 15px;
+  }
+
+  .icono-margin{
+    margin-top: -15px;
+  }
+
+  .navega{
+    list-style: none;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  .navega li{
+    display: inline-block;
+  }
+  .navega li a{
+    padding: 10px;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .tam-letter{
+    font-size: 13px;
+    margin:20px 0 0 0;
+    padding: 0px;
+  }
+}
+
 
