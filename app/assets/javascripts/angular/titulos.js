@@ -48,7 +48,7 @@ app.controller('mensajeconstruccion',["$scope",function(s){
         swal({
             title: 'Versión 0.1',
             text: 'Pronto veras más funciones no te desesperes',
-            imageUrl: '<%= image_tag "pagina-en-construccion.jpg" %>',
+            imageUrl: 'http://www.camaratru.org.pe/web2/images/pagina-en-construccion.jpg',
             imageWidth: 400,
             imageHeight: 200,
             animation: true
