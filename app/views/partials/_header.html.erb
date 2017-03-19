@@ -26,13 +26,32 @@
         </div>
         <div class="collapse navbar-collapse navbar-right blanco" id="menumovil">
           <ul class="navega">
-            <li><a href="#info">ACERCA DE</a></li>
+            <li><button type="button" data-toggle="modal" data-target="#informacion">ACERCA DE</button></li>
             <li><a href="/gestionescolar/iniciarsesion.html">INICIAR SESIÓN</a></li>
           </ul>
         </div>
       </div>
   </nav>
 
+  <div class="modal fade" id="informacion" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <!--Encabezado de ayuda-->
+        <div class="modal-header color-5 blanco">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="blanco">&times;</span></button>
+          <h3 class="modal-title">Acerca de la aplicación</h3>
+        </div>
+        <!--Contenido de ayuda-->
+        <div class="modal-body">
+          <p>Esta página es una obra intelectual protegida por la Ley Federal del Derecho de Autor, puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica; su uso para otros fines, requiere autorización previa y por escrito del Director General del Instituto. ®2017</p>
+        </div>
+        <!--Pie de página de ayuda-->
+        <div class="modal-footer color-5">
+          <button class="btn color-4 blanco" data-dismiss="modal">Aceptar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </header>
 
