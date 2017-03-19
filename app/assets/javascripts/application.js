@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require angular/angular.min
 //= require angular-application
+//= require sweetalert2/dist/sweetalert2
 //= require_tree .

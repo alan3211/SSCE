@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require sweetalert2/dist/sweetalert2
  *= require_self
  */
 
@@ -19,7 +20,7 @@
 }
 
 .blanco, a:hover,a:visited{
-    color:#FFFFFF;
+  color:#FFFFFF;
 }
 
 .btn:hover{
@@ -27,23 +28,23 @@
 }
 
 .color-5{
-    background-color: #005099;
+  background-color: #005099;
 }
 .color-4{
-    background-color: #0082C8;
+  background-color: #0082C8;
 }
 .color-3{
-    background-color: #01A4E7;
+  background-color: #01A4E7;
 }
 .color-2{
-    background-color: #C9DBE4;
+  background-color: #C9DBE4;
 }
 .color-1{
-    background-color: #E8F4FC;
+  background-color: #E8F4FC;
 }
 
 .large-padding{
-    padding-top:40px;
+  padding-top:40px;
 }
 
 .small-padding{
@@ -76,12 +77,32 @@
 }
 .navega li a, .navega li button{
   background-color: #005099;
-  padding: 15px;
+  margin: 10px 5px;
   display: block;
   color: #FFFFFF;
   font-weight: bold;
   border: none;
   text-decoration: none;
+}
+
+.fondo{
+  background-image: url("<%= asset_path "escomfoto.png" %>");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bloque{
+  background-color: #292929;
+  opacity: 0.7;
+  color: #FFFFFF;
+  font-size: 28px;
+  margin: 190px 310px 300px 380px;
+  border-radius: 10px;
+  padding: 0px 20px 0px 20px;
+}
+
+.navbar{
+  margin-bottom: 0px !important;
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1920px){
@@ -92,13 +113,14 @@
   .navega{
     list-style: none;
     padding:0;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .navega li{
     display: inline-block;
+    padding: 0px;
   }
-  .navega li a{
+  .navega li a,.navega li button{
     padding: 15px;
     display: inline-block;
     color: #FFFFFF;
@@ -108,11 +130,22 @@
   .tam-letter{
     font-size: 24px;
   }
+
+  .bloque{
+    background-color: #292929;
+    opacity: 0.7;
+    color: #FFFFFF;
+    font-size: 28px;
+    margin: 190px 310px 300px 380px;
+    border-radius: 10px;
+    padding: 0px 20px 0px 20px;
+  }
+
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1200px){
   .margen{
-    margin-top: 25px;
+    margin-top: 35px;
   }
 
   .icono-margin{
@@ -127,9 +160,10 @@
 
   .navega li{
     display: inline-block;
+    padding: 0px;
   }
-  .navega li a{
-    padding: 15px;
+  .navega li a,.navega li button{
+    padding: 5px;
     display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
@@ -142,7 +176,7 @@
 
 @media screen and (min-width: 990px) and (max-width: 1023px){
   .margen{
-    margin-top: 20px;
+    margin-top: 35px;
   }
 
   .icono-margin{
@@ -158,21 +192,20 @@
   .navega li{
     display: inline-block;
   }
-  .navega li a{
-    padding: 15px;
+  .navega li a,.navega li button{
     display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
   }
   .tam-letter{
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 989px){
   .margen{
-    margin-top: 15px;
+    margin-top: 25px;
   }
 
   .icono-margin{
@@ -182,23 +215,24 @@
   .navega{
     list-style: none;
     margin-top: 10px;
-    padding: 0px;
+  }
+
+  .navbar-text{
+    padding: 10px;
   }
 
   .navega li{
     display: inline-block;
   }
-  .navega li a{
-    padding: 10px;
+  .navega li a,.navega li button{
+    padding-top: 5px;
     display: inline-block;
     color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
   }
   .tam-letter{
-    font-size: 13px;
-    margin:20px 0 0 0;
-    padding: 0px;
+    font-size: 11px;
   }
 }
 

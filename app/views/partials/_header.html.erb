@@ -1,11 +1,10 @@
-<header ng-app="ECGE" ng-controller="titulos">
-  <div class="container">
+<header ng-controller="titulos">
+  <div class="container-fluid">
       <div class="row">
-          <div class="{{logo_ipn.clase}}">
-            <a href="{{logo_ipn.enlace}}"><%= image_tag "header_sw2016.png", alt:"LOGO IPN",class: "img-responsive" %></a>
+          <div class="col-xs-12 col-sm-6 col-md-7 col-lg-8">
+            <a href="http://ipn.mx"><%= image_tag "header_sw2016.png", alt:"LOGO IPN",class: "img-responsive" %></a>
           </div>
-          <div class="col-md-2 col-lg-2"></div>
-          <div class="hidden-xs col-sm-6 col-md-5 col-lg-4 margen">
+          <div class="hidden-xs col-sm-6 col-md-5 col-lg-4 text-center margen">
             <ul class="menu">
               <li ng-repeat="ipn in titulos_ipn"><a href="{{ipn.enlace}}">{{ipn.titulo}}</a></li>
             </ul>
@@ -14,7 +13,7 @@
   </div>
 
   <nav class="navbar color-5 blanco">
-      <div class="container">
+      <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#menumovil">
               <span class="sr-only">Menu</span>
@@ -27,7 +26,7 @@
         <div class="collapse navbar-collapse navbar-right blanco" id="menumovil">
           <ul class="navega">
             <li><button type="button" data-toggle="modal" data-target="#informacion">ACERCA DE</button></li>
-            <li><a href="/gestionescolar/iniciarsesion.html">INICIAR SESIÓN</a></li>
+            <li><a href="/gestionescolar/iniciarsesion.html iniciasesion">INICIAR SESIÓN</a></li>
           </ul>
         </div>
       </div>
