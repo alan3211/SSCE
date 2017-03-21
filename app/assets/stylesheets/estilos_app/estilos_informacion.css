@@ -1,0 +1,39 @@
+/*Estilos en la información*/
+
+.tipos_constancias{
+    padding: 20px;
+}
+
+.list-constancias{
+    margin-top: 30px;
+}
+
+.constancia-title{
+    font-size: 2.8em;
+    padding: 0 20px;
+}
+
+.constancia{
+    padding: 0 10px 10px 10px;
+    font-size: 1.8em;
+}
+
+/*Estilos en el botón de registro*/
+
+.cuenta{
+    font-size: 2.8em;
+    padding: 35px;
+}
+.msg_reg{
+    font-size: 2.1em;
+    padding: 10px;
+    font-weight: normal;
+}
+
+.boton_reg{
+    font-size: 2.2em;
+    padding: 15px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    border-style: none;
+}
