@@ -28,7 +28,6 @@ app.controller('mensajeconstruccion',["$scope",function(s){
     }
 }]);
 
-
 app.controller('lista_constancias',["$scope",function(s){
     s.constancias = [
         "Constancia de estudios",
@@ -37,5 +36,26 @@ app.controller('lista_constancias',["$scope",function(s){
         "Constancia de créditos para servicio social",
         "Boleta global informativa",
         "Boleta global certificada"
+    ];
+}]);
+
+app.controller('direccion',["$scope",function(s){
+    s.datos = [
+                {
+                    descripcion: "Av. Juan de Dios Bátiz s/nesq.Av.Miguel Othón de Mendizabal.Colonia Lindavista. Demarcación Territorial: Gustavo A. Madero.C.P.07738.",
+                    icono: "glyphicon glyphicon-map-marker"
+                },
+                {
+                    descripcion:"direccion_escom@ipn.mx",
+                    icono:"glyphicon glyphicon-envelope"
+                },
+                {
+                    descripcion:"www.escom.ipn.mx",
+                    icono:"glyphicon glyphicon-globe"
+                },
+                {
+                    descripcion:"57296000 ext.46188",
+                    icono:"glyphicon glyphicon-earphone"
+                }
     ];
 }]);

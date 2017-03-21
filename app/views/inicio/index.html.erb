@@ -24,8 +24,49 @@
   </div>
 </div>
 
-<div ng-controller="mensajeconstruccion" class="container center-block">
-  <button type="button" class="btn btn-info btn-lg" ng-click="mensaje()">
-    Más Información
-  </button>
+<div class="color-5 blanco">
+  <div class="container-fluid text-center">
+    <h2>Ubicación</h2>
+  </div>
+</div>
+
+<div class="color-1 bg-color-4" ng-controller="direccion">
+  <div class="container-fluid text-justify">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+        <h3 class="text-center">Dirección</h3>
+        <ul class="list-unstyled list-constancias">
+          <li ng-repeat="x in datos"><span class="{{x.icono}}"></span>{{x.descripcion}}</li>
+        </ul>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 container">
+        <div id="mapa" class="img-responsive"></div>
+        <script>
+            //Localizacion de ESCOM
+            function initMap() {
+              var x = 19.504901;
+              var y =  -99.146910;
+              var latitud = new google.maps.LatLng(x,y);
+              var opciones_mapa = {
+                  zoom: 16,
+                  center: latitud
+              }
+              var map = new google.maps.Map(document.getElementById('mapa'),opciones_mapa);
+              var marcador = new google.maps.Marker({
+                  position: latitud,
+                  title:"Escuela Superior de Cómputo"
+              });
+              marcador.setMap(map);
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBd1DcMD4J7TP5WoFQHsXWurJRdVuHt3aU&callback=initMap" async defer></script>
+
+      </div>
+    </div>
+  </div>
+  <div ng-controller="mensajeconstruccion" class="container center-block">
+    <button type="button" class="btn btn-info btn-lg" ng-click="mensaje()">
+      Más Información
+    </button>
+  </div>
 </div>

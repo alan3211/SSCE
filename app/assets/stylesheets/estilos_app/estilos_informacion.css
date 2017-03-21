@@ -25,15 +25,22 @@
     padding: 35px;
 }
 .msg_reg{
-    font-size: 2.1em;
+    font-size: 1.6em;
     padding: 10px;
     font-weight: normal;
 }
 
 .boton_reg{
     font-size: 2.2em;
-    padding: 15px;
-    margin: 10px 20px;
+    padding: 10px;
+    margin: 20px 20px 80px 20px;
     border-radius: 10px;
     border-style: none;
+}
+
+/*Estilo del mapa*/
+#mapa{
+    width: 600px;
+    height: 450px;
+    padding: 20px;
 }
