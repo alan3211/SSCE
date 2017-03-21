@@ -1,5 +1,4 @@
 app.controller('titulos',["$scope",function(s){
-
     s.titulos_ipn =[
                     {
                         titulo:"Directorio",
@@ -13,17 +12,6 @@ app.controller('titulos',["$scope",function(s){
                         titulo: "Calendario",
                         enlace: "http://www.ipn.mx/Paginas/Calendario-Academico.aspx"
                     }
-    ];
-
-    s.titles = [
-        {
-            titulo: "ACERCA DE",
-            enlace: "#info"
-        },
-        {
-            titulo: "INICIAR SESIÓN",
-            enlace: "/gestionescolar/iniciarsesion.html"
-        }
     ];
 }]);
 
