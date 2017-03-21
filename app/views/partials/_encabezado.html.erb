@@ -1,0 +1,63 @@
+<header ng-controller="titulos">
+  <div class="container">
+      <div class="row">
+        <div class="col-sm-7 col-md-7">
+          <a href="http://ipn.mx">
+          <%= image_tag "header_sw2016.png",class: "img-responsive" %>
+          </a>
+        </div>
+        <div class="hidden-xs col-sm-5 col-md-5 titulos_ipn text-center">
+            <ul>
+              <li ng-repeat="enc in titulos_ipn"><a href="{{enc.enlace}}">{{enc.titulo}}</a></li>
+            </ul>
+        </div>
+      </div>
+  </div>
+
+  <nav class="navbar color-5" role="navigation">
+    <!-- El logotipo y el icono que despliega el menú se agrupan
+         para mostrarlos mejor en los dispositivos móviles -->
+    <div class="navbar-header blanco">
+      <button type="button" class="navbar-toggle glyphicon glyphicon-align-justify" data-toggle="collapse"
+              data-target="#menumovil">
+        <span class="sr-only">Desplegar navegación</span>
+      </button>
+      <a class="navbar-brand override-img hidden-xs" href="/">
+        <%= image_tag "logoESCOMSolo_mini.png",class: "img-responsive" %>
+      </a>
+      <a class="navbar-text blanco hidden-sm" href="/">
+        <h4 class="header-title">Seguimiento de Solicitudes de Constancias de la ESCOM.</h4>
+      </a>
+      <a class="navbar-text blanco visible-sm" href="/">
+        <h5 class="header-title">Seguimiento de Solicitudes de Constancias de la ESCOM.</h5>
+      </a>
+    </div>
+    <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+         otro elemento que se pueda ocultar al minimizar la barra -->
+    <div class="collapse navbar-collapse" id="menumovil">
+      <ul class="nav navbar-nav navbar-right opciones">
+        <li><button class="enlace boton_acerca" type="button" data-toggle="modal" data-target="#info">ACERCA DE</button></li>
+        <li><a href="/gestionescolar/iniciarsesion.html" class="enlace">INICIAR SESIÓN</a></li>
+      </ul>
+    </div>
+    <div class="modal fade" id="info" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <!--Encabezado de ayuda-->
+          <div class="modal-header color-5 blanco">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true" class="blanco">&times;</span></button>
+            <h3 class="modal-title">Acerca de la aplicación</h3>
+          </div>
+          <!--Contenido de ayuda-->
+          <div class="modal-body">
+            <p>Esta página es una obra intelectual protegida por la Ley Federal del Derecho de Autor, puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica; su uso para otros fines, requiere autorización previa y por escrito del Director General del Instituto. ®2017</p>
+          </div>
+          <!--Pie de página de ayuda-->
+          <div class="modal-footer color-5">
+            <button class="btn color-4 blanco" data-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

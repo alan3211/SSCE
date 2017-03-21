@@ -15,30 +15,14 @@ app.controller('titulos',["$scope",function(s){
                     }
     ];
 
-
     s.titles = [
         {
             titulo: "ACERCA DE",
-            enlace: "#modal-1"
+            enlace: "#info"
         },
         {
             titulo: "INICIAR SESIÓN",
             enlace: "/gestionescolar/iniciarsesion.html"
-        }
-    ];
-
-    s.titles_ipn = [
-        {
-            title: "Directorio",
-            enlace: "http://www.ipn.mx/Paginas/directorio.aspx"
-        },
-        {
-            title: "Correo Electrónico",
-            enlace: "http://www.ipn.mx/Paginas/Correo-Electronico.aspx"
-        },
-        {
-            title: "Calendario",
-            enlace: "http://www.ipn.mx/Paginas/Calendario-Academico.aspx"
         }
     ];
 }]);
@@ -61,7 +45,7 @@ app.controller('lista_constancias',["$scope",function(s){
     s.constancias = [
         "Constancia de estudios",
         "Constancia de inscripción",
-        "Constancia con periodo vacional",
+        "Constancia con periodo vacacional",
         "Constancia de créditos para servicio social",
         "Boleta global informativa",
         "Boleta global certificada"

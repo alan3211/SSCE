@@ -27,3 +27,31 @@
   </div>
 </div>
 
+ <div class="container-fluid" ng-controller="lista_constancias">
+    <div class="row">
+      <div class="bg-color-1">
+          <div class="col-md-6 color-4">
+              <div class="container">
+                <h2 class="text-center titulo">¿Qué tipo de constancias puedo trámitar?</h2>
+                <ul class="list-unstyled text-center">
+                  <li ng-repeat="tipos in constancias" class="tipos_contancias">{{tipos}}</li>
+                </ul>
+              </div>
+          </div>
+      </div>
+      <div class="bg-color-5">
+        <div class="col-md-6 color-1">
+            <h2 class="text-center titulo">¿No tienes cuenta?</h2>
+            <p class="text-justify bg-color-3 descripcion">
+              Para poder solicitar constancias es necesario que tengas una cuenta activa e
+              iniciar sesión. En caso contrario deberás registrarte en el botón de abajo
+              ¿Qué estás esperando? registrate y solicita tus constancias en cualquier
+              momento.
+            </p>
+            <button class="color-5 blanco boton-reg">REGISTRATE</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
