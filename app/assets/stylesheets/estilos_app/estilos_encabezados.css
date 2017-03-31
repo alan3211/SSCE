@@ -1,45 +1,71 @@
 /*Estilos de los encabezados del Politécnico*/
-
-.titulos_ipn{
-    list-style: none;
-    padding:0;
-    margin-top:30px;
-}
-
-.titulos_ipn li{
-    display: inline-block;
-}
-
-.titulos_ipn li a{
-    padding:5px;
-    display: inline-block;
+.titulos_ipn,.titulos_ipn:hover{
+    padding:3px;
     color:#6C1941;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: bolder !important;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 /*Estilos para la barra de navegación*/
 
-#menumovil{
-    margin:5px;
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
-.header-title{
-    margin-top: 10px;
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.enlace,.enlace:visited,.enlace:active{
-    background-color: #005099 !important;
-    color: #E8F4FC !important;
+.menu .logo{
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.menu .logo img{
+    vertical-align: top;
+    height: 50px;
+}
+
+.menu .logo h3{
+    color: #FFFFFF;
+    display: inline-block;
+    align-self: center;
+}
+
+
+.menu .btn-menu{
+    display: none;
+    color: #FFFFFF;
     text-decoration: none;
+    font-size: 1em;
 }
 
-.opciones{
-    margin-top: 5px !important;
+.menu .enlaces{
+    display: inline-block;
+    text-align: right;
 }
 
-.boton_acerca,.boton_acerca:hover,.boton_acerca:active,.boton_acerca:visited,.boton_acerca:focus{
-    border: none !important;
-    padding: 15px;
+.menu .enlaces a{
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    text-align: center;
+    font-size: 1em;
 }
+
+.menu .enlaces a:hover{
+    background-color: #FFFFFF;
+    color: #005099;
+}
+
+

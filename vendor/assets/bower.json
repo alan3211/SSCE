@@ -3,6 +3,6 @@
   "dependencies": {
     "angular": "latest",
     "bootstrap": "latest",
-    "sweetalert2": "latest"
+    "fontawesome": "latest"
   }
 }

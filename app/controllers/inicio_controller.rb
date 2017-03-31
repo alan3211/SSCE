@@ -7,4 +7,7 @@ class InicioController < ApplicationController
 
   end
 
+  def recupera_contraseña
+
+  end
 end
